@@ -374,6 +374,6 @@ app.delete("/bookings/:id", async (req, res) => {
 //   .catch((error) => {
 //     console.log("Error: ", error);
 //   });
-app.listen(process.env.PORT || 4000, () => {
-  console.log(`Server is running on port ${process.env.PORT}`);
+app.listen(process.env.PORTT || 4000, () => {
+  console.log(`Server is running on port ${process.env.PORTT}`);
 });

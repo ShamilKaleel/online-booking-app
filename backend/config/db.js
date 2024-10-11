@@ -3,7 +3,7 @@ require("dotenv").config();
 mongoose.set("strictQuery", false);
 
 mongoose
-  .connect(process.env.MONGO_URL)
+  .connect(process.env.MONGO_URLL)
   .then(() => {
     console.log("Connection to database was successful");
   })
