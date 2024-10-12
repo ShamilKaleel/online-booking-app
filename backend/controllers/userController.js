@@ -61,7 +61,7 @@ const login = async (req, res) => {
           email: userDoc.email,
           id: userDoc._id,
         },
-        process.env.JWT_SECRET,
+        process.env.JWT_SECRETT,
         {},
         (err, token) => {
           if (err) throw err;
