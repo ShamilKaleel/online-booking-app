@@ -1,5 +1,3 @@
-// src/components/LogoSlider.js
-
 import React from "react";
 import Slider from "react-infinite-logo-slider";
 

@@ -55,7 +55,7 @@ export default function PlacesPage() {
   };
 
   return (
-    <div className="mx-auto mt-28 md:max-w-screen-xl">
+    <div className="mx-auto mt-28 md:max-w-screen-xl min-h-screen">
       <div className="mx-5 2xl:mx-0">
         <div>
           <AccountNav />

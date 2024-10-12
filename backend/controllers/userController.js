@@ -62,7 +62,7 @@ const login = async (req, res) => {
           id: userDoc._id,
         },
         process.env.JWT_SECRETT,
-        {},
+        { expiresIn: "1h" }, // Expires in 1 hour,
         (err, token) => {
           if (err) throw err;
           res.cookie("token", token).json(userDoc);

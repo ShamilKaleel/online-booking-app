@@ -32,10 +32,18 @@ app.use(express.json());
 app.use(cookieParser());
 app.use("/uploads", express.static(__dirname + "/uploads"));
 //app.use(express.urlencoded({ extended: true }));
+
+// const allowedOrigins = [
+//   "http://localhost:5173",
+//   "https://stay-ease-theta.vercel.app",
+//   "https://stay-ease-er4tzls2x-shamil-kaleels-projects.vercel.app",
+//   "https://stay-ease-exd4mk6jz-shamil-kaleels-projects.vercel.app",
+// ];
+
 app.use(
   cors({
     credentials: true,
-    origin: "http://localhost:5173",
+    origin: "https://stay-ease-exd4mk6jz-shamil-kaleels-projects.vercel.app",
   })
 );
 
