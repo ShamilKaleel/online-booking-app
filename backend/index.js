@@ -32,10 +32,20 @@ app.use(express.json());
 app.use(cookieParser());
 app.use("/uploads", express.static(__dirname + "/uploads"));
 //app.use(express.urlencoded({ extended: true }));
+
+const allowedOrigins = [
+  "http://localhost:5173",
+  "https://stay-ease-theta.vercel.app",
+  "https://stay-ease-er4tzls2x-shamil-kaleels-projects.vercel.app",
+];
 app.use(
   cors({
     credentials: true,
-    origin: "http://localhost:5173",
+    origin: (origin, callback) => {
+      // Check if the origin is in the allowedOrigins array or if it's undefined (e.g., a same-origin request)
+      const isAllowed = allowedOrigins.includes(origin) || !origin;
+      callback(null, isAllowed);
+    },
   })
 );
 
