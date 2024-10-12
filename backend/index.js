@@ -43,10 +43,7 @@ app.use("/uploads", express.static(__dirname + "/uploads"));
 app.use(
   cors({
     credentials: true,
-    origin: [
-      "https://stay-ease-exd4mk6jz-shamil-kaleels-projects.vercel.app",
-      "https://stay-ease-qe2i34vky-shamil-kaleels-projects.vercel.app",
-    ],
+    origin: "https://stay-ease-qe2i34vky-shamil-kaleels-projects.vercel.app",
   })
 );
 
