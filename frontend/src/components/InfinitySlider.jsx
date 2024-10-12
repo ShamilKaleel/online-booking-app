@@ -1,9 +1,7 @@
-// src/components/LogoSlider.js
-
 import React from "react";
 import Slider from "react-infinite-logo-slider";
 
-const LogoSlider = () => {
+export default function InfinitySlider() {
   return (
     <Slider
       width="250px"
@@ -49,6 +47,4 @@ const LogoSlider = () => {
       </Slider.Slide>
     </Slider>
   );
-};
-
-export default LogoSlider;
+}
