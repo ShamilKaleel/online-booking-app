@@ -8,7 +8,9 @@ export default function IndexPage() {
     <>
       <Hero />
 
-      <div className="py-20">{/* <InfinitySlider /> */}</div>
+      <div className="py-20">
+        <InfinitySlider />
+      </div>
 
       <div className="mt-20">
         <Services />
