@@ -16,7 +16,9 @@ import { ToastContainer } from "react-toastify";
 import AboutPage from "./pages/AboutPage.jsx";
 import AllPalcesPage from "./pages/AllPalcesPage.jsx";
 
-axios.defaults.baseURL = "https://online-booking-app.vercel.app/api";
+//axios.defaults.baseURL = "https://online-booking-app.vercel.app/api";
+axios.defaults.baseURL =
+  "https://online-booking-app-git-main-shamil-kaleels-projects.vercel.app/api";
 axios.defaults.withCredentials = true;
 
 function App() {
