@@ -65,7 +65,13 @@ const login = async (req, res) => {
         { expiresIn: "1h" }, // Expires in 1 hour,
         (err, token) => {
           if (err) throw err;
-          res.cookie("token", token).json(userDoc);
+          res
+            .cookie("token", token, {
+              httpOnly: true, // Only accessible via HTTP requests, not JS
+              secure: true, // Must be true for HTTPS (set this in production)
+              sameSite: "None",
+            })
+            .json(userDoc);
         }
       );
     } else {
