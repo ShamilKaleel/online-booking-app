@@ -106,7 +106,7 @@ export default function PlacesFormPage() {
               onChange={(ev) => setAddress(ev.target.value)}
               placeholder="address"
             />
-            {preInput("Photos", "more = better")}
+            {preInput("Photos", "Add photos of your place")}
             <PhotosUploader
               addedPhotos={addedPhotos}
               onChange={setAddedPhotos}
