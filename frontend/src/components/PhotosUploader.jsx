@@ -2,10 +2,11 @@ import axios from "axios";
 import { useState } from "react";
 import Image from "./Image";
 export default function PhotosUploader({ addedPhotos, onChange }) {
-  const [photoLink, setPhotoLink] = useState("");
+  //const [photoLink, setPhotoLink] = useState("");
 
   //upload photo by link
-  async function addPhotoByLink(ev) {
+  {
+    /* async function addPhotoByLink(ev) {
     ev.preventDefault();
     try {
       const { data: filename } = await axios.post("/upload-by-link", {
@@ -27,6 +28,7 @@ export default function PhotosUploader({ addedPhotos, onChange }) {
       return [...prev, filename];
     });
     setPhotoLink("");
+  }*/
   }
 
   //upload photo by file
@@ -74,7 +76,7 @@ export default function PhotosUploader({ addedPhotos, onChange }) {
   }
   return (
     <>
-      <div className="flex gap-2">
+      {/* <div className="flex gap-2">
         <input
           value={photoLink}
           onChange={(ev) => setPhotoLink(ev.target.value)}
@@ -87,7 +89,7 @@ export default function PhotosUploader({ addedPhotos, onChange }) {
         >
           Add&nbsp;photo
         </button>
-      </div>
+      </div> */}
       <div className="mt-2 grid gap-2 grid-cols-3 md:grid-cols-4 lg:grid-cols-6">
         {addedPhotos.length > 0 &&
           addedPhotos.map((link) => (
