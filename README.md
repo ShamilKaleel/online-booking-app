@@ -1,4 +1,4 @@
-# StayEase Booking Platform
+# StayEase: A Seamless Booking Platform for Travelers
 
 ## Overview
 
