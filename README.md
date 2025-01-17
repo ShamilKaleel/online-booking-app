@@ -13,103 +13,50 @@ Before you begin, ensure you have met the following requirements:
 ## Installation
 
 ### 1. Clone the repository:
-\`\`\`bash
-git clone https://github.com/FarhathCader/Automated-Grading-for-Programming-Assignments.git
+
+git clone 
 cd online-booking-app
 \`\`\`
 
 ### 2. Install server dependencies:
-\`\`\`bash
-cd backend
-yarn
+<code>cd backend
+   yarn</code>
+
 \`\`\`
 
 ### 3. Install client dependencies:
-\`\`\`bash
-cd ../frontend
-yarn i
-\`\`\`
+<code>cd ../frontend
+yarn i</code>
 
 ---
 
 ## Configuration
 
-Create a `.env` file in the `server` directory and include the following environment variables:
+Create a `.env` file
 
-\`\`\`plaintext
-PORT = 4000
+
+<code>PORT = 4000
 MONGO_URLL =
 JWT_SECRETT =
 AWS_BUCKET_NAMEE =
 AWS_BUCKET_REGIONN =
 AWS_ACCESS_KEYY =
-AWS_SECRET_ACCESS_KEYY =
-\`\`\`
+AWS_SECRET_ACCESS_KEYY =</code>
+
 
 ---
 
 ## Running the Application
 
 ### 1. Start the backend :
-\`\`\`bash
-cd backend
-nodemon index.js
-\`\`\`
+<code>cd backend
+nodemon index.js</code>
+
 
 ### 2. Start the frontend server:
-\`\`\`bash
-cd ../client
-yarn run dev
-\`\`\`
 
-## Folder Structure
-
-\`\`\`
-Automated-Grading-for-Programming-Assignments/
-|
-├── backend/
-│   ├── config/
-│   ├── controllers/
-│   ├── models/
-│   ├── routes/
-│   ├── middleware/
-│   ├── .env
-│   ├── index.js
-|   ├── package.json
-|   ├── vercel.json
-│   └── yarn.lock
-|   
-|
-├── frontend/
-│   ├── public/
-│   ├── src/
-│   │   ├── assets/
-│   │   ├── components/
-│   │   ├── constants/
-│   │   ├── context/
-│   │   ├── pages/
-│   │   ├── App.jsx
-│   │   ├── index.css
-│   │   ├── Layout.jsx
-│   │   ├── main.jsx
-│   ├── .env
-│   ├── index.html
-│   ├── package.json
-│   ├── postcss.config.cjs
-│   ├── tailwind.config.cjs
-│   ├── vercel.json
-│   ├── vite.config.js
-│   └── yarn.lock
-|
-├── .gitignore
-└── README.md
-\`\`\`
-
----
+<code>cd ../client
+yarn dev</code>
 
 
----
 
-## License
-
-This project is licensed under the [MIT License](LICENSE).
