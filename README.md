@@ -59,4 +59,7 @@ nodemon index.js</code>
 yarn dev</code>
 
 
-
+\`\`\`bash
+cd server
+npm run dev
+\`\`\`
