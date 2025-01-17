@@ -110,4 +110,3 @@ Use IAM Policies to assign granular access control to each role based on the req
 
 - Both the **frontend** and **backend services** are hosted on **Vercel**.  
 - The **MongoDB database** is deployed on **cloud infrastructure**.
-new
