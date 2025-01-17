@@ -14,15 +14,14 @@ Before you begin, ensure you have met the following requirements:
 
 ### 1. Clone the repository:
 
-git clone 
-cd online-booking-app
-\`\`\`
+<code>git clone 
+cd online-booking-app</code>
+
 
 ### 2. Install server dependencies:
 <code>cd backend
    yarn</code>
 
-\`\`\`
 
 ### 3. Install client dependencies:
 <code>cd ../frontend
@@ -34,7 +33,6 @@ yarn i</code>
 
 Create a `.env` file
 
-
 <code>PORT = 4000
 MONGO_URLL =
 JWT_SECRETT =
@@ -42,7 +40,6 @@ AWS_BUCKET_NAMEE =
 AWS_BUCKET_REGIONN =
 AWS_ACCESS_KEYY =
 AWS_SECRET_ACCESS_KEYY =</code>
-
 
 ---
 
@@ -52,14 +49,10 @@ AWS_SECRET_ACCESS_KEYY =</code>
 <code>cd backend
 nodemon index.js</code>
 
-
 ### 2. Start the frontend server:
 
 <code>cd ../client
 yarn dev</code>
 
 
-\`\`\`bash
-cd server
-npm run dev
-\`\`\`
+
