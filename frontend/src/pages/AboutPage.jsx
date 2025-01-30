@@ -16,12 +16,10 @@ export default function AboutPage() {
               Find Your Ideal Getaway with StayEase
             </p>
             <p className="lg:text-gray-400">
-              We are a team of crypto enthusiasts who have been working together
-              for years. Our company is registered in the UK, but we have
-              representatives in any country in the world. The Crypto Saving
-              project has been designed to provide a unique financial service to
-              crypto holders who wish to earn additional income from their
-              cryptocurrencies.
+              At StayEase, we believe that finding the perfect accommodation
+              should be effortless. Whether you are planning a vacation, a
+              business trip, or looking to rent out your space, we provide a
+              seamless platform to connect travelers with hosts worldwide.
             </p>
             <div className="pt-5">
               <Link
