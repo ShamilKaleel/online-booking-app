@@ -50,7 +50,7 @@ Before you begin, ensure you have the following installed:
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/yourusername/travel-booking-platform.git
+git clone https://github.com/ShamilKaleel/online-booking-app
 cd online-booking-app
 ```
 
